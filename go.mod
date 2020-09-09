@@ -1,4 +1,4 @@
-module github.com/onrik/logrus
+module github.com/deface90/logrus-sentry
 
 go 1.14
 
