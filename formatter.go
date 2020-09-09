@@ -1,4 +1,4 @@
-package logrus_sentry
+package logrussentry
 
 import (
 	log "github.com/sirupsen/logrus"
