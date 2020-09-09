@@ -36,7 +36,7 @@ func (hook *Hook) Levels() []logrus.Level {
 }
 
 func (hook *Hook) Fire(entry *logrus.Entry) error {
-	exceptions := []sentry.Exception{}
+	var exceptions []sentry.Exception
 
 	if err, ok := entry.Data[logrus.ErrorKey].(error); ok && err != nil {
 		stacktrace := sentry.ExtractStacktrace(err)
