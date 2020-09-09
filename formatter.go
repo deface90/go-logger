@@ -1,5 +1,9 @@
 package logrus_sentry
 
+import (
+	log "github.com/sirupsen/logrus"
+)
+
 // formatter adds default fields to each log entry.
 type Formatter struct {
 	fields log.Fields
