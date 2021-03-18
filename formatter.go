@@ -4,7 +4,7 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-// formatter adds default fields to each log entry.
+// Formatter adds default fields to each log entry.
 type Formatter struct {
 	Fields log.Fields
 	LF     log.Formatter
